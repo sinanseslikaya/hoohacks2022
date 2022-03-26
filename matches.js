@@ -1,27 +1,17 @@
-// content.js
-var XMLHttpRequest = require('xhr2');
-var xhr = new XMLHttpRequest();
-//const Papa = require("./papaparse.min.js");
-const Papa = require("papaparse");
-const csvLink = "https://gist.githubusercontent.com/nsfyn55/605783ac8de36f361fb10ef187272113/raw/2a115dc6d4d8c3b14f84b12d784363ea36935e9d/media-bias-scrubbed-results.csv";
-
+//matches.js
 /**
  * seaches csv file
  * @param {string} url website url
  * @returns {string} see biasToColor(), filename for extension logo change
  */
-
+const newsSources = require('./media.json');
+// console.log(newsSources);
 function getLogo(url){
-    //newsSources = $.csv.toArray(sources)
-    var newsSourves = Papa.parse(csvLink,{
-        download: true,
-        complete: function(results){
-            console.log(results);
-        }
-    });
-    for(let i = 0; i < newsSources.getLength(); i++){
-        if (newsSources[i][1].includes(url,0) || url.includes(newsSources[i][1],0)){
-            return biasToLogo(newsSources[i][2]) + confidenceToLogo(newsSources[i][3]) + ".png";
+    for (var site of newsSources){
+        // console.log(site.url);
+        if (site.url.includes(url) || url.includes(site.url)){
+            // console.log(site.url);
+            return biasToLogo(site.bias_rating) + confidenceToLogo(site.factual_reporting_rating) + ".png";
         }
     }
 }
@@ -49,5 +39,3 @@ function confidenceToLogo(confidence){
     else if (confidence == "HIGH") {return "Yellow";}
     else {return "Red";}
 }
-
-console.log(getLogo("https://aeon.co/"))
