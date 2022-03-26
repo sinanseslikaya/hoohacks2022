@@ -6,6 +6,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  // "content_scripts": ["matches.js", "content.js"],
+  // "content_scripts": [
+  //   {
+      
+  //   }
+  // ]
   "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
