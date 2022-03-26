@@ -58,6 +58,7 @@ chrome.tabs.onUpdated.addListener(function
     
     // read changeInfo data and do something with it (like read the url)
     if (changeInfo.url) {
+
       // let logo = '';
       // import('./matches.js')
       // .then((ns) => {
@@ -80,5 +81,6 @@ chrome.tabs.onUpdated.addListener(function
       } else {
           chrome.action.setIcon({path: logo, tabId: tabId});
       }
+
     }
   });
