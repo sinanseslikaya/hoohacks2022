@@ -17,11 +17,12 @@ chrome.tabs.onUpdated.addListener(function
       // do something here
       console.log(tab.url);
       if (tab.url == durl) {
-        // console.log("daily mail detected");
-        chrome.browserAction.setIcon({ path: "/images/CYellow_16.png", tabId: tabId });
+        console.log("daily mail detected");
+        chrome.pageAction.setIcon({path: "/images/white.png", tabId :tabId});
       }
       else {
-        chrome.browserAction.setIcon({ path: "/images/white.png", tabId: tabId});
+        chrome.pageAction.setIcon({path: "/images/green.png", tabId :tabId});
+        // chrome.pageAction.setIcon({ path: "/images/white.png", tabId: tabId});
       }
     
     }

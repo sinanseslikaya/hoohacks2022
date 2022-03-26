@@ -2,16 +2,18 @@
   "name": "News Essentials",
   "description": "rank credibility and bias of website you are visiting ",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
     "service_worker": "background.js"
   },
-  // "content_scripts": ["matches.js", "content.js"],
-  // "content_scripts": [
-  //   {
-      
-  //   }
-  // ]
+  "page_action":{
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
   "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
@@ -26,9 +28,12 @@
     "16": "/images/get_started16.png",
     "32": "/images/get_started32.png",
     "48": "/images/get_started48.png",
-    "128": "/images/get_started128.png"
-    // "white": "/images/white.png",
+    "128": "/images/white.png"
+    // "white": "/images/white.png"
     // "green": "/images/green.png"
+  },
+  "white": {
+    "128": "/images/white.png"
   },
   "options_page": "options.html"
 }
