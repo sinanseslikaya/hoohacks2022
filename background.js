@@ -15,13 +15,13 @@ chrome.tabs.onUpdated.addListener(function
     if (changeInfo.url) {
       // console.log("here in changeInfo.url")
       // do something here
-      console.log(tab.url);
+      // console.log(tab.url);
       if (tab.url == durl) {
-        console.log("daily mail detected");
-        chrome.pageAction.setIcon({path: "/images/white.png", tabId :tabId});
+        // console.log("daily mail detected");
+        chrome.action.setIcon({path: "/images/white.png", tabId :tabId});
       }
       else {
-        chrome.pageAction.setIcon({path: "/images/green.png", tabId :tabId});
+        chrome.action.setIcon({path: "/images/green.png", tabId :tabId});
         // chrome.pageAction.setIcon({ path: "/images/white.png", tabId: tabId});
       }
     
