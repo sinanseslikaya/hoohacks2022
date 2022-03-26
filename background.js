@@ -18,10 +18,10 @@ chrome.tabs.onUpdated.addListener(function
       console.log(tab.url);
       if (tab.url == durl) {
         // console.log("daily mail detected");
-        chrome.browserAction.setIcon({ path: "/images/green.png" });
+        chrome.browserAction.setIcon({ path: "/images/CYellow_16.png", tabId: tabId });
       }
       else {
-        chrome.browserAction.setIcon({ path: "/images/white.png" });
+        chrome.browserAction.setIcon({ path: "/images/white.png", tabId: tabId});
       }
     
     }
