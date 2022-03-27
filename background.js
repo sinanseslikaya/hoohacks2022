@@ -1,4 +1,4 @@
-
+// background.js
 /**
  * seaches csv file
  * @param {string} url website url
@@ -43,7 +43,9 @@ function confidenceToLogo(confidence){
     else if (confidence == "HIGH") {return "Yellow";}
     else {return "Red";}
 }
-
+/**
+ * Listner for tab changes. Uses the above helper functions to change the extension logo based on current site's credibility.
+ */
 chrome.tabs.onUpdated.addListener(function
   (tabId, changeInfo, tab) {
     

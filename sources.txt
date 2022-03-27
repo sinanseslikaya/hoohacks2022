@@ -1,1 +1,2 @@
 The Google tutorial for creating extensions was where most of our starter code (including folder setup, etc.) came from: https://developer.chrome.com/docs/extensions/mv3/getstarted/
+The scraped data used for website detection came from GitHub user nsfyn55 from https://gist.github.com/nsfyn55/605783ac8de36f361fb10ef187272113#file-media-bias-scrubbed-results-csv
