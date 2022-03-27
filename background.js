@@ -58,7 +58,7 @@ chrome.tabs.onUpdated.addListener(function
 const setIcon = async(tab, tabId) => {
   const logo = await getLogo(tab.url);
   if (logo=='') {
-      chrome.action.setIcon({path: "/images/questionMark.png", tabId : tabId});
+      chrome.action.setIcon({path: "/images/logo.png", tabId : tabId});
   } else {
       chrome.action.setIcon({path: ""+logo, tabId: tabId});
   }
