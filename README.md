@@ -32,7 +32,7 @@ Each icon has one of three colors based on the credibility of the current news s
 
 ![](images/RCRed.png) A Red icon indicates that the site may or may not be reliable.
 
-Each icon also has one of five policatical bias ratings:
+Each icon also has one of five political bias ratings:
 
 ![](images/LYellow.png) 'L' indicates a strong left bias.
 
