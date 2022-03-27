@@ -54,7 +54,7 @@ function confidenceToLogo(confidence){
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ color });
-  console.log('Default background color set to %cgreen', `color: ${color}`);
+  // console.log('Default background color set to %cgreen', `color: ${color}`);
 });
 
 chrome.tabs.onUpdated.addListener(function
@@ -95,9 +95,8 @@ chrome.tabs.onUpdated.addListener(function
 
 const setIcon = async(tab, tabId) => {
   const logo = await getLogo(tab.url);
-  console.log(logo);
   if (logo=='') {
-      chrome.action.setIcon({path: "/images/green.png", tabId : tabId});
+      chrome.action.setIcon({path: "/images/questionMark.png", tabId : tabId});
   } else {
       chrome.action.setIcon({path: ""+logo, tabId: tabId});
   }
