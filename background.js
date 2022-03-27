@@ -1,11 +1,4 @@
-// background.js
 
-
-
-let color = '#3aa757';
-let durl = 'https://www.dailymail.co.uk/ushome/index.html';
-
-//matches.js
 /**
  * seaches csv file
  * @param {string} url website url
@@ -62,34 +55,7 @@ chrome.tabs.onUpdated.addListener(function
     
     // read changeInfo data and do something with it (like read the url)
     if (changeInfo.url) {
-
-      // let logo = '';
-      // import('./matches.js')
-      // .then((ns) => {
-      //     logo = ns.getLogo(tab.url);
-      //     // ns.getLogo();
-      // })
-
-
-      // if (tab.url == durl) {
-      //   // console.log("daily mail detected");
-      //   chrome.action.setIcon({path: "/images/white.png", tabId :tabId});
-      // }
-      // else {
-      //   chrome.action.setIcon({path: "/images/green.png", tabId :tabId});
-      // }
-
-
       setIcon(tab, tabId);
-
-      // const logo = await getLogo(tab.url);
-      // console.log(logo);
-      // if (logo=='') {
-      //     chrome.action.setIcon({path: "/images/green.png", tabId : tabId});
-      // } else {
-      //     chrome.action.setIcon({path: ""+logo, tabId: tabId});
-      // }
-
     }
   });
 
