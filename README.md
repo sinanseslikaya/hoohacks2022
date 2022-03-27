@@ -12,7 +12,7 @@
 To clone and run this application, you'll need [Git](https://git-scm.com) and a Chromium-based browser (Google Chrome, Edge and Brave are a few) installed on your computer. 
 
 1. Download/Clone this git repo into your directory of choice. Make sure to unzip if needed.
-2. Open your browser and go to chrome://extensions
+2. Open your browser and go to [chrome://extensions](chrome://extensions)
 3. Enable Developer Mode (on the top right)
 4. Click "Load Unpacked"
 5. Select the directory to which this repo was downloaded
