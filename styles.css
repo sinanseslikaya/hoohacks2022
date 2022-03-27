@@ -1,17 +1,97 @@
 body {
-  min-width: 300px;
+  min-width: 400px;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
-button {
-  height: 30px;
-  width: 30px;
-  outline: none;
-  margin: 10px;
-  border: none;
-  border-radius: 2px;
+h1 {
+  font-size: large;
+  padding: 2%;
+  margin: 0% 0% 2%;
+  background-color: black;
+  color: white;
 }
 
-button.current {
-  box-shadow: 0 0 0 2px white,
-              0 0 0 4px black;
+h2 {
+  font-size: large;
+  padding: 2%;
+  margin: 0%;
+  color: white;
+}
+
+p {
+  font-size: medium;
+  padding: 2%;
+  margin: 0% 0% 2%;
+}
+
+h2.left {
+  background-color: #111585;
+}
+
+h2.left-center {
+  background-color: #1a5fad;
+}
+
+h2.center {
+  background-color: #555555;
+}
+
+h2.right-center {
+  background-color: #962d2d;
+}
+
+h2.right {
+  background-color: #7d1111;
+}
+
+h2.very-high {
+  background-color: #045404;
+}
+
+h2.high {
+  background-color: #877d13;
+}
+
+h2.mixed {
+  background-color: #ab3d0e;
+}
+
+h2.unknown {
+  background-color: #333333;
+}
+
+p.left {
+  border: 5px solid #111585;
+}
+
+p.left-center {
+  border: 5px solid #1a5fad;
+}
+
+p.center {
+  border: 5px solid #555555;
+}
+
+p.right-center {
+  border: 5px solid #962d2d;
+}
+
+p.right {
+  border: 5px solid #7d1111;
+}
+
+p.very-high {
+  border: 5px solid #045404;
+}
+
+p.high {
+  border: 5px solid #877d13;
+}
+
+p.mixed {
+  border: 5px solid #ab3d0e;
+}
+
+p.unknown {
+  border: 5px solid #333333;
 }
