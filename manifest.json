@@ -6,23 +6,23 @@
   "background": {
     "service_worker": "background.js"
   },
-  "page_action":{
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    }
-  },
+  // "page_action":{
+  //   "default_icon": {
+  //     "16": "/images/get_started16.png",
+  //     "32": "/images/get_started32.png",
+  //     "48": "/images/get_started48.png",
+  //     "128": "/images/get_started128.png"
+  //   }
+  // },
   "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    }
+    "default_icon": "/images/questionMark.png"//{
+    //   "16": "/images/get_started16.png",
+    //   "32": "/images/get_started32.png",
+    //   "48": "/images/get_started48.png",
+    //   "128": "/images/get_started128.png"
+    // }
   },
   "icons": {
     "16": "/images/get_started16.png",
@@ -32,8 +32,8 @@
     // "white": "/images/white.png"
     // "green": "/images/green.png"
   },
-  "white": {
-    "128": "/images/white.png"
-  },
+  // "white": {
+  //   "128": "/images/white.png"
+  // },
   "options_page": "options.html"
 }
