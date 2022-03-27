@@ -44,12 +44,6 @@ function confidenceToLogo(confidence){
     else {return "Red";}
 }
 
-
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color });
-  // console.log('Default background color set to %cgreen', `color: ${color}`);
-});
-
 chrome.tabs.onUpdated.addListener(function
   (tabId, changeInfo, tab) {
     
